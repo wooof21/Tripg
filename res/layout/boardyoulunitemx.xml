@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="40dp" >
+
+    <TextView
+        android:id="@+id/textViewitem1"
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_marginLeft="31dp"
+        android:layout_marginTop="5dp"
+        android:text="第一天 17：00启航-中国上海"
+        android:gravity="center_vertical"
+        android:textColor="#8A8A8A"
+        android:background="@drawable/carorder_bg"
+        android:textSize="15sp" />
+
+</RelativeLayout>

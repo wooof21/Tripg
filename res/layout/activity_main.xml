@@ -1,0 +1,179 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:weightSum="1" >
+
+        <cn.tripg.isv.MyImgScroll
+            android:id="@+id/isv"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.17"
+            android:orientation="horizontal" />
+
+        <LinearLayout
+            android:id="@+id/vb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center"
+            android:layout_weight="0.02"
+            android:orientation="horizontal" >
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="0.75"
+            android:weightSum="2"
+            android:orientation="horizontal" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5" >
+
+                <LinearLayout
+                    android:id="@+id/hotel_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/hotel"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/car_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/yongche"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/travel_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/lvyou"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/dt_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/dongtai"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:weightSum="5" >
+
+                <LinearLayout
+                    android:id="@+id/trains_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/trains"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/flight_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="2"
+                    android:background="@drawable/fly_ticket"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/ship_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/youlun"
+                    android:orientation="horizontal" 
+                    android:layout_margin="3dp">
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/visa_rl"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/qianzheng"
+                    android:orientation="horizontal"
+                    android:layout_margin="3dp" >
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_gravity="bottom"
+            android:layout_marginTop="2dp"
+            android:layout_weight="0.06"
+            android:background="@drawable/main_bottom_bg"
+            android:orientation="horizontal"
+            android:weightSum="4" >
+
+            <ImageView
+                android:id="@+id/main_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_blue" />
+
+            <ImageView
+                android:id="@+id/main_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/my_order_gray" />
+
+            <ImageView
+                android:id="@+id/main_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/phone_gray" />
+
+            <ImageView
+                android:id="@+id/main_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mine_gray" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        
+         />
+
+</FrameLayout>
+

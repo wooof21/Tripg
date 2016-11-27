@@ -1,0 +1,125 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0">
+       
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/fly_ticket"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <!-- air plane logo -->
+    <ImageView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/fly"
+        android:layout_below="@id/title_flight"/>
+     <!-- single trip switch -->
+        <ImageView
+            android:id="@+id/single_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/single_trip_on"
+            android:layout_below="@id/ad"
+            android:layout_alignParentLeft="true"
+            android:layout_marginTop="2dp"
+            android:layout_marginLeft="4dp"/>
+        <!-- round trip switch -->
+        <ImageView
+            android:id="@+id/round_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/round_trip_off"
+            android:layout_below="@id/ad"
+            android:layout_marginTop="2dp"
+            android:layout_marginRight="4dp"
+            android:layout_alignParentRight="true"/>
+        <!-- trip from selection -->
+
+    <FrameLayout
+        android:id="@+id/from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/single_switch"
+        android:layout_alignParentLeft="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/from_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/single_trip_from"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/from_text"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:text="@string/fly_from"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <!-- trip to select -->
+    <FrameLayout
+        android:id="@+id/to"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/single_switch"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="4dp"
+        android:layout_marginBottom="20dp">
+        <ImageView
+            android:id="@+id/to_bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/single_trip_to"
+            android:layout_gravity="center"/>
+        <TextView
+            android:id="@+id/to_text"
+            android:textColor="#000000"
+            android:textSize="22sp"
+            android:text="@string/fly_to"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+<!--
+    <include android:id="@+id/data_long1" layout="@layout/flight_date_long"/>
+  -->
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

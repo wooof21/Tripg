@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-220dp"
+        android:src="@drawable/ditu" />
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-218dp"
+        android:layout_marginLeft="-120dp"
+        android:textSize="18sp"
+        android:text="发票抬头:" />
+    
+    <EditText
+        android:id="@+id/editTextf1"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-218dp"
+        android:layout_marginLeft="38dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:imeOptions="actionDone" 
+        android:hint="请输入"
+         />
+    
+    
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-175dp"
+        android:src="@drawable/ditu" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-170dp"
+        android:layout_marginLeft="-120dp"
+        android:textSize="18sp"
+        android:text="邮寄地址:" />
+    
+     <EditText
+        android:id="@+id/editTextf2"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-173dp"
+        android:layout_marginLeft="38dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:imeOptions="actionDone" 
+        android:hint="请输入"
+         />
+     
+     <ImageView
+        android:id="@+id/imageView33"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="-131dp"
+        android:src="@drawable/ditu" />
+      <TextView
+        android:id="@+id/textView33"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="-130dp"
+        android:layout_marginLeft="-120dp"
+        android:textSize="18sp"
+        android:text="邮政编码:" />
+    
+     <EditText
+        android:id="@+id/editTextf33"
+        android:layout_width="240dp"
+        android:layout_height="45dp"
+        android:layout_marginTop="-129dp"
+        android:layout_marginLeft="38dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="12sp"
+        android:imeOptions="actionDone" 
+        android:hint="请输入"
+         />
+
+     <ImageView
+         android:id="@+id/imageViewfpview"
+         android:layout_width="wrap_content"
+         android:layout_height="40dp"
+         android:layout_gravity="center"
+         android:layout_marginTop="-10dp"
+         android:src="@drawable/jqpd" />
+
+</FrameLayout>
+

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="习惯记忆"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           />
+    </FrameLayout>
+    <!-- air plane logo -->
+	<FrameLayout 
+    	android:layout_width="match_parent"
+    	android:layout_height="match_parent" >
+
+		<ImageView
+		    android:id="@+id/imageView1"
+		    android:layout_width="wrap_content"
+		    android:layout_height="wrap_content"
+		    android:src="@drawable/vipupdate" />
+
+	</FrameLayout>
+</LinearLayout>

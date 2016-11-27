@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f8fb"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/nat_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="编辑常用旅客"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nat_name" >
+
+        <EditText
+            android:id="@+id/nat_name"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="姓名"
+            android:background="@null"
+            android:layout_marginLeft="120dp"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/carorder_bg"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/nat_type"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:paddingLeft="120dp"
+            android:text="成人"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nat_idtype" >
+
+        <TextView
+            android:id="@+id/nat_id"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:layout_marginLeft="120dp"
+            android:text="身份证"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/nat_idno" >
+
+        <EditText
+            android:id="@+id/nat_id_no"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:hint="证件号"
+            android:layout_marginLeft="120dp"
+            android:background="@null"
+            android:textSize="16sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_margin="15dp"
+        android:background="@drawable/corners_bg_lblue" >
+
+        <TextView
+            android:id="@+id/nat_save"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="保存"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:background="@drawable/nat_tv" 
+        android:layout_marginRight="30dp"/>
+
+</LinearLayout>

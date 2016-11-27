@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#ededed" >
+    
+<FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/cc_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="选择联系人"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/cc_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+    
+<LinearLayout 
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/cc_ban"
+    ></LinearLayout>
+
+<TextView 
+    android:id="@+id/cc_import"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:background="@drawable/cc_import"
+   />
+
+<ListView
+    android:id="@+id/cc_lv"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+</ListView>
+
+</LinearLayout>

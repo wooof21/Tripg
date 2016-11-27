@@ -1,0 +1,44 @@
+ <!-- warn : do not modify the sequence. -->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginBottom="2dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:layout_marginTop="2dp" >
+
+    <ImageView
+        android:id="@+id/btn_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/btn_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="5dp"
+        android:paddingLeft="15dp"
+        android:textColor="#ffffff"
+        android:textSize="10sp" />
+
+    <TextView
+        android:id="@+id/btn_price"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:gravity="center_horizontal"
+        android:paddingBottom="5dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="10dp"
+        android:textSize="10sp" />
+
+    <View
+        android:layout_width="1dip"
+        android:layout_height="fill_parent"
+        android:background="?android:attr/listDivider" />
+
+</FrameLayout>

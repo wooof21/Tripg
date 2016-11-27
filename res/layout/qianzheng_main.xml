@@ -1,0 +1,534 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff" >
+
+    <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_qianzheng_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="签证"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/qianzheng_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_order"
+        android:background="#D1D1D1"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/qianzheng_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/imageViewqianzheng1"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:background="@drawable/visa_ban" >
+                </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_weight="2"
+                android:background="@drawable/qz2"
+                android:orientation="horizontal" >
+
+               <EditText
+                    android:id="@+id/editText1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="2.5dp"
+                    android:layout_weight="1.6"
+                    android:ems="8"
+                    android:hint="搜索国家"
+                    android:inputType="textPersonName" >
+
+                </EditText>
+
+                <ImageView
+                    android:id="@+id/imageViewqianzhengsou1"
+                    android:layout_width="80dp"
+                    android:layout_height="30dp"
+                    android:layout_marginTop="5dp"
+                    android:src="@drawable/add_request1" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/qz2"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/textViewqianzheng1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:text="个人旅游签证"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewqianzheng2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="更多"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty1"
+                        android:layout_below="@+id/imageViewqianzhengit1"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt1"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty1"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty1"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty2"
+                        android:layout_below="@+id/imageViewqianzhengit2"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt2"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty2"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty2"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty3"
+                        android:layout_below="@+id/imageViewqianzhengit3"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt3"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty3"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty3"
+                        android:text="￥99999" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty4"
+                        android:layout_below="@+id/imageViewqianzhengit4"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt4"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty4"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty4"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty5"
+                        android:layout_below="@+id/imageViewqianzhengit5"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt5"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty5"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty5"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty6"
+                        android:layout_below="@+id/imageViewqianzhengit6"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt6"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty6"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty6"
+                        android:text="￥99999" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty7"
+                        android:layout_below="@+id/imageViewqianzhengit7"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt7"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty7"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty7"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty8"
+                        android:layout_below="@+id/imageViewqianzhengit8"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt8"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty8"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty8"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewqianzhengit9"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengitt9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty9"
+                        android:layout_below="@+id/imageViewqianzhengit9"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="美国" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengty9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewqianzhengitt9"
+                        android:gravity="center"
+                        android:text="个人签证" />
+
+                    <TextView
+                        android:id="@+id/textViewqianzhengpir9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewqianzhengty9"
+                        android:layout_alignParentBottom="true"
+                        android:layout_below="@+id/textViewqianzhengty9"
+                        android:text="￥99999" />
+                </RelativeLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_weight="1"
+                android:background="@drawable/qz2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewqianzhan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:text="办理流程"
+                    android:textSize="22px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:orientation="horizontal" >
+
+                <ImageView
+                    android:id="@+id/imageViewqianzhan1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/qianz1" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

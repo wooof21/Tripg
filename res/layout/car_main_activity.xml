@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0">
+        
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/yidao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <!-- air plane logo -->
+
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+		android:scaleType="center"
+        android:src="@drawable/car_ban" />
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginTop="-45dp"
+        android:layout_gravity="center"
+         >
+
+        <ImageButton
+            android:id="@+id/imageButton1"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ys"/>
+        
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="城市名称"
+            />
+
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp" 
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center">
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:src="@drawable/ys" />
+        
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="用车类型"
+            />
+        
+        
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/imageView3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="130dp"
+        android:layout_gravity="center"
+        android:src="@drawable/yc" />
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffffff"
+         >
+    </ListView>
+
+</FrameLayout>
+</LinearLayout>

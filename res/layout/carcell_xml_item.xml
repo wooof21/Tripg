@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:layout_marginTop="0dp"
+    android:minHeight="0dp"
+    android:orientation="vertical" >
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="110dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/textViewasdasd"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textViewfee"
+            android:layout_alignParentLeft="true"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#31608f"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewfee"
+            android:layout_width="40dp"
+            android:layout_height="30dp"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="300"
+            android:textColor="#cd0b09"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="80dp"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/textViewfee"
+            android:layout_alignParentLeft="true"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="TextView"
+            android:textColor="#31608f"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewyuan"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_alignBottom="@+id/imageButtonyuding"
+            android:layout_marginLeft="-5dp"
+            android:layout_toRightOf="@+id/textViewfee"
+            android:background="#CCCCCC"
+            android:gravity="center"
+            android:text="元/次起(含1小时40公里)"
+            android:textColor="#6a6a6a"
+            android:textSize="12sp" />
+
+     <ImageButton
+            android:id="@+id/imageButtonyuding"
+            android:layout_width="60dp"
+            android:layout_height="26dp"
+            android:layout_alignParentTop="true"
+
+            android:layout_marginLeft="3dp"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="2dp"
+            android:background="@drawable/yudingcar" />
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_below="@+id/textViewyuan"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_launcher" />
+
+        <TextView
+            android:id="@+id/textViewche"
+            android:layout_width="220dp"
+            android:layout_height="20dp"
+            android:layout_below="@+id/textViewyuan"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_toRightOf="@+id/imageView1"
+            android:gravity="left"
+            android:text="TextView2"
+            android:textColor="#4f4f4f"
+            android:textSize="14sp" />
+
+        <TextView
+            android:id="@+id/textViewperson"
+            android:layout_width="80dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/textViewche"
+            android:layout_below="@+id/textViewche"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="5dp"
+            android:gravity="left"
+            android:text="限乘2人;"
+            android:textColor="#8d8d8d"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textViewli"
+            android:layout_width="220dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/textViewperson"
+            android:layout_below="@+id/textViewperson"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:text="超公里费:4元/公里;"
+            android:textColor="#8d8d8d"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textViewhuor"
+            android:layout_width="130dp"
+            android:layout_height="15dp"
+            android:layout_alignRight="@+id/textViewli"
+            android:layout_below="@+id/textViewperson"
+            android:layout_marginTop="2dp"
+            android:gravity="right"
+            android:text="超小时费:40元/小时"
+            android:textColor="#8d8d8d"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="70dp"
+            android:layout_height="15dp"
+            android:layout_alignLeft="@+id/textViewli"
+            android:layout_below="@+id/textViewli"
+            android:layout_marginTop="2dp"
+            android:gravity="left"
+            android:text="费用包含:"
+            android:textColor="#8d8d8d"
+            android:textSize="11sp" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="37.5dp"
+            android:layout_height="12dp"
+            android:layout_below="@+id/textViewhuor"
+            android:layout_marginTop="3dp"
+            android:layout_toRightOf="@+id/textView4"
+            android:src="@drawable/yy" />
+    </RelativeLayout>
+
+</LinearLayout>

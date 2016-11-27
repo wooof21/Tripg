@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- title -->
+
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/vipmain"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+    <!-- air plane logo -->
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/title_flight"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/yonghu1"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:paddingTop="5dp" >
+
+                <TextView
+                    android:id="@+id/textViewname"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:paddingTop="8dp"
+                    android:text="18686345008"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/imageViewvipback"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:paddingTop="5dp"
+                    android:src="@drawable/vipback" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewvipcode"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="40dp"
+                    android:text="准金牌用户"
+                    android:textSize="18sp" />
+
+                <ImageView
+                    android:id="@+id/vip_maincon_change"
+                    android:layout_width="60dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="40dp"
+                    android:src="@drawable/vipchangepass"
+                    android:visibility="visible" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imageViewviporder"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/vmc_mo" />
+
+        <ImageView
+            android:id="@+id/imageViewvipjifen"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/vmc_mc" />
+
+        <ImageView
+            android:id="@+id/imageViewvipjiyi"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/vipjiyi"
+            android:visibility="gone" />
+
+        <ImageView
+            android:id="@+id/imageViewvipgeren"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:src="@drawable/vmc_pd" />
+
+        <ImageView
+            android:id="@+id/traveler"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/vmc_t" />
+
+        <ImageView
+            android:id="@+id/contacter"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/vmc_c" />
+
+        <ImageView
+            android:id="@+id/address"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:src="@drawable/vmc_a" />
+
+        <ImageView
+            android:id="@+id/about"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/vmc_as" />
+        
+                <TextView
+        android:id="@+id/vip_version_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:gravity="center"
+        android:text="TextView"
+         />
+    </LinearLayout>
+
+
+        
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom"
+        android:background="@drawable/main_bottom_bg"
+        android:orientation="horizontal"
+        android:weightSum="4" >
+
+        <ImageView
+            android:id="@+id/vmc_main"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/main_gray" />
+
+        <ImageView
+            android:id="@+id/vmc_my_order"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/my_order_gray" />
+
+        <ImageView
+            android:id="@+id/vmc_phone"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/phone_gray" />
+
+        <ImageView
+            android:id="@+id/vmc_mine"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@drawable/mine_blue" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

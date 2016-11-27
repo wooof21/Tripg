@@ -1,0 +1,37 @@
+<resources>
+    <!--activity灰色背景
+    -->
+	<style name="Transparent">
+	<item name="android:windowBackground">@color/light_drak</item>
+	<item name="android:windowIsTranslucent">false</item>
+	</style>
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+  
+
+    <!-- Application theme. -->
+   
+    <style name="margin_all">
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+        <item name="android:layout_marginTop">6.0dp</item>
+        <item name="android:layout_marginBottom">6.0dp</item>
+    </style>
+    <style name="margin_left_right">
+        <item name="android:layout_marginLeft">10.0dp</item>
+        <item name="android:layout_marginRight">10.0dp</item>
+    </style>
+    <style name="margin_top_bottom">
+        <item name="android:layout_marginTop">6.0dp</item>
+        <item name="android:layout_marginBottom">6.0dp</item>
+    </style>
+    <style name="MyDialog" parent="@android:Theme.Dialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowNoTitle">true</item> 
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+    </style>
+
+</resources>

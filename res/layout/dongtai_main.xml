@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+        <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0">
+       
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/dongtai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            />
+    </FrameLayout>
+    <!-- air plane logo -->
+    
+<FrameLayout 
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+
+    <ImageView
+        android:id="@+id/imageViewd1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-198dp"
+        android:src="@drawable/dong" />
+
+    <ImageView
+        android:id="@+id/imageViewd2"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-135dp"
+        android:layout_marginLeft="-80dp"
+        android:src="@drawable/qjon" />
+
+    <ImageView
+        android:id="@+id/imageViewd3"
+        android:layout_width="160dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-135dp"
+        android:layout_marginLeft="79dp"
+        android:src="@drawable/hboff" />
+
+    <ImageView
+        android:id="@+id/imageViewd4"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="-85dp"
+        android:src="@drawable/dqf" />
+
+    <TextView
+        android:id="@+id/textViewd1"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="-85dp"
+        android:text="TextView" />
+    
+    <ImageView
+        android:id="@+id/imageViewd5"
+        android:layout_width="145dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="85dp"
+        android:src="@drawable/djl" />
+    
+    <TextView
+        android:id="@+id/textViewd2"
+        android:layout_width="100dp"
+        android:layout_height="20dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-75dp"
+        android:layout_marginLeft="85dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageViewd6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/drq" />
+    
+    <TextView
+        android:id="@+id/textViewd3"
+        android:layout_width="200dp"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="0dp"
+        android:text="TextView" />
+
+    <ImageView
+        android:id="@+id/imageViewd7"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="80dp"
+        android:src="@drawable/dc" />
+
+    <FrameLayout
+        android:id="@+id/layoutdong"  
+        android:layout_width="match_parent"
+        android:layout_height="60dp" 
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-72dp"
+        >
+        
+        <ImageView
+        android:id="@+id/imageViewd6678096"
+        android:layout_width="400dp"
+        android:layout_height="60dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:src="@drawable/hbhsu" />
+        
+        <EditText
+        android:id="@+id/editTexthangban"
+        android:layout_width="match_parent"
+        android:layout_height="44dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:imeOptions="actionDone" 
+        android:hint="请输入航班号"
+         />
+
+    </FrameLayout>
+    
+</FrameLayout>
+</LinearLayout>

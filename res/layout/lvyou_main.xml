@@ -1,0 +1,406 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+ <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_lvyou_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="旅游"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <ScrollView
+        android:id="@+id/lvyou_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_order"
+        android:background="#D1D1D1"
+        android:scrollbars="vertical" >
+
+        <LinearLayout
+            android:id="@+id/lvyou_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+
+            <ImageView
+                android:id="@+id/imageViewlvyou1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:src="@drawable/jd01" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:background="@drawable/qz2"
+                android:orientation="horizontal" >
+
+                <TextView
+                    android:id="@+id/textViewlvyou1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:text="热门旅游"
+                    android:textSize="22px" />
+
+                <TextView
+                    android:id="@+id/textViewlvyou2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="更多"
+                    android:textSize="22px" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit1"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty1"
+                        android:layout_below="@+id/imageViewlvyouit1"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt1"
+                        android:gravity="center"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit2"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty2"
+                        android:layout_below="@+id/imageViewlvyouit2"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt2"
+                        android:gravity="center"
+                        android:text="￥99999" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit3"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty3"
+                        android:layout_below="@+id/imageViewlvyouit3"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt3"
+                        android:gravity="center"
+                        android:text="￥99999" />
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit4"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty4"
+                        android:layout_below="@+id/imageViewlvyouit4"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt4"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit5"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty5"
+                        android:layout_below="@+id/imageViewlvyouit5"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt5"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                   
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit6"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty6"
+                        android:layout_below="@+id/imageViewlvyouit6"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt6"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                    
+                </RelativeLayout>
+            </LinearLayout>
+             <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:orientation="horizontal" >
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1"
+                    android:gravity="center" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit7"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty7"
+                        android:layout_below="@+id/imageViewlvyouit7"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt7"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit8"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty8"
+                        android:layout_below="@+id/imageViewlvyouit8"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt8"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                    
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:layout_width="120dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="1dp"
+                    android:layout_marginRight="1dp"
+                    android:layout_weight="1" >
+
+                    <ImageView
+                        android:id="@+id/imageViewlvyouit9"
+                        android:layout_width="120dp"
+                        android:layout_height="120dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/loading" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouitt9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignLeft="@+id/textViewlvyouty9"
+                        android:layout_below="@+id/imageViewlvyouit9"
+                        android:layout_gravity="center"
+                        android:gravity="center_vertical"
+                        android:text="阿联酋航空往返" />
+
+                    <TextView
+                        android:id="@+id/textViewlvyouty9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/textViewlvyouitt9"
+                        android:gravity="center"
+                        android:text="￥99999" />
+
+                    
+                </RelativeLayout>
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+                </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

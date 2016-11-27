@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/hotel_xlist_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@null"
+    android:paddingBottom="4dp"
+    android:paddingLeft="4dp"
+    android:paddingRight="4dp"
+    android:paddingTop="4dp">
+    <ImageView
+        android:id="@+id/hotel_img"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@drawable/loading"
+        android:layout_marginRight="4dp"/>
+    <TextView
+        android:id="@+id/hotel_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/hotel_img"
+        android:layout_toRightOf="@id/hotel_img"
+        android:text="某某某大酒店"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="18sp" />
+    <ImageView
+        android:id="@+id/hotel_star"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/hotel_name"
+        android:layout_toRightOf="@id/hotel_img"/>
+    <TextView
+        android:id="@+id/hotel_address"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@id/hotel_img"
+        android:layout_toRightOf="@id/hotel_img"
+        android:text="地址:"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/hotel_phone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/hotel_address"
+        android:layout_toRightOf="@id/hotel_img"
+        android:textSize="12sp"
+        android:ellipsize="end"
+        android:maxLines="1"
+        android:text="电话:" />
+    <TextView
+        android:id="@+id/hotel_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="4dp"
+        android:textSize="18sp"
+        android:textColor="#FF8C00"
+        android:text="￥600" />
+</RelativeLayout>

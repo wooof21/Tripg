@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/tca_bg" 
+    android:weightSum="3">
+    
+<TextView 
+    android:id="@+id/ci_name"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="张三测试"
+    android:textSize="18sp"
+    android:layout_weight="1"
+    android:gravity="center_vertical"
+    android:paddingLeft="20dp"
+    />
+<TextView 
+    android:id="@+id/ci_area_code"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text="+86"
+    android:paddingRight="15dp"
+    android:textSize="18sp"
+    android:layout_weight="1.2"
+    android:gravity="center_vertical|right"
+    android:visibility="invisible"
+    />
+<TextView 
+    android:id="@+id/ci_phone"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:text=""
+    android:textSize="18sp"
+    android:layout_weight="0.8"
+    android:gravity="center_vertical"
+    />
+    
+</LinearLayout>

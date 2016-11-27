@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#f2f8fb">
+
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/about_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="关于我们"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/about_new_feature"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/aboutus_nf"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_update"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/aboutus_ud"
+        android:orientation="horizontal" >
+
+        
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/about_feedback"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/aboutus_fb"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+    
+        <LinearLayout
+        android:id="@+id/about_website"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/aboutus_ws"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+    
+            <LinearLayout
+        android:id="@+id/about_share"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginTop="2dp"
+        android:background="@drawable/aboutus_share"
+        android:orientation="horizontal" >
+
+    </LinearLayout>
+
+</LinearLayout>

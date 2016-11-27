@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- add boardman as TextView -->
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="#ffffff">
+    <LinearLayout 
+        android:id="@+id/top_title"
+        android:layout_height="fill_parent"
+        android:layout_width="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp">
+        <TextView
+            android:id="@+id/cabin_info_discount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20sp"
+            android:textColor="#8A8A8A"
+            android:layout_gravity="left|center_vertical"/>
+        <TextView
+            android:id="@+id/cabin_price"
+            android:textColor="#EE9A49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="22sp"
+            android:paddingLeft="20dp"
+            android:layout_gravity="right|center_vertical"/>
+    </LinearLayout>
+<TextView
+            android:id="@+id/return_content_view"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:textSize="13sp"
+            android:textColor="#8A8A8A"
+            android:text="Content"
+            android:layout_marginRight="10dp"
+        	android:layout_marginBottom="10dp"
+        	android:singleLine="false"/> 
+        	
+    </LinearLayout>

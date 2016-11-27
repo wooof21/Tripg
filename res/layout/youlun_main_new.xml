@@ -1,0 +1,754 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical" >
+    
+
+        <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_youlun_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="游轮"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+    
+<ScrollView
+        android:id="@+id/youlun_scroll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/title_order"
+        android:background="#D1D1D1"
+        android:scrollbars="vertical" >
+        
+    <LinearLayout
+            android:id="@+id/youlun_info"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="vertical" >
+            
+        <LinearLayout
+                android:orientation="horizontal"
+                android:id="@+id/imageViewyoulun1"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:background="@drawable/jd01" >
+</LinearLayout>
+        
+        
+       
+    <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:background="@drawable/qz2"
+                android:orientation="horizontal"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp" >
+
+                <TextView
+                    android:id="@+id/textViewyoulun1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1.6"
+                    android:text="热门航线"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/textViewyoulun2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:text="更多"
+                    android:textSize="20sp" />
+            </LinearLayout>
+            
+    
+    <!-- start -->
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+       	android:layout_height="130dp"
+        android:weightSum="3">
+      <!-- 1 -->  
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"         
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+                <ImageView
+                        android:id="@+id/imageViewyoulunit1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+
+                    
+                    <cn.tripg.xlistview.MarqueeTV 
+                        android:id="@+id/textViewyoulunitt1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国"
+                        />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <TextView
+                        android:id="@+id/textViewyoulunty1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+        <!-- 2 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"   
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+				<ImageView
+                        android:id="@+id/imageViewyoulunit2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt2"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/textViewyoulunty2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+        <!-- 3 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"       
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+                <ImageView
+                        android:id="@+id/imageViewyoulunit3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt3"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/textViewyoulunty3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+        <!-- end -->
+         <!-- start -->
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+       	android:layout_height="130dp"
+        android:weightSum="3">
+      <!-- 1 -->  
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"         
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+
+                <ImageView
+                        android:id="@+id/imageViewyoulunit4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt4"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <TextView
+                        android:id="@+id/textViewyoulunty4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+        <!-- 2 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"   
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+
+                <ImageView
+                        android:id="@+id/imageViewyoulunit5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt5"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/textViewyoulunty5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+        <!-- 3 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"       
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+
+                <ImageView
+                        android:id="@+id/imageViewyoulunit6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt6"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/textViewyoulunty6"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+        <!-- end -->
+        
+         <!-- start -->
+    <LinearLayout 
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+       	android:layout_height="130dp"
+        android:weightSum="3">
+      <!-- 1 -->  
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"         
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+
+                <ImageView
+                        android:id="@+id/imageViewyoulunit7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt7"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    
+                    <TextView
+                        android:id="@+id/textViewyoulunty7"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                </LinearLayout>
+            </LinearLayout>
+            
+        </LinearLayout>
+        <!-- 2 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"   
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+                <ImageView
+                        android:id="@+id/imageViewyoulunit8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+
+                
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt8"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <TextView
+                        android:id="@+id/textViewyoulunty8"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+            
+        </LinearLayout>
+        <!-- 3 -->
+        <LinearLayout 
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:weightSum="1"
+            android:orientation="vertical"       
+            >
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.3"
+                >
+
+                <ImageView
+                        android:id="@+id/imageViewyoulunit9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="fill_parent"
+						android:scaleType="center"
+                        android:src="@drawable/loading" />
+            </LinearLayout>
+            
+            <LinearLayout 
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="0.7"
+                android:weightSum="1"
+                android:orientation="vertical"
+                >
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <cn.tripg.xlistview.MarqueeTV
+                        android:id="@+id/textViewyoulunitt9"
+                        android:layout_width="fill_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:textSize="14sp"
+  						android:ellipsize="marquee"
+  						android:marqueeRepeatLimit="marquee_forever"  
+  						android:scrollHorizontally="true"
+  						android:focusableInTouchMode="true" 
+  						android:layout_gravity="center"
+  						android:focusable ="true"
+  						android:singleLine="true"
+                        android:text="美国" />
+                    
+                </LinearLayout>
+                
+                
+                <LinearLayout 
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="0.5"
+                    >
+                    <TextView
+                        android:id="@+id/textViewyoulunty9"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+               
+                        android:text="￥99999" />
+                    
+                </LinearLayout>
+            </LinearLayout>
+            
+            
+        </LinearLayout>
+    </LinearLayout>
+        <!-- end -->
+        
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal" >
+                </LinearLayout>
+    </LinearLayout>
+        
+</ScrollView>
+</LinearLayout>

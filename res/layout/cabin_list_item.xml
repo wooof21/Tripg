@@ -1,0 +1,59 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minHeight="70dp">
+    <RelativeLayout
+        android:id="@+id/left_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:layout_alignBottom="@+id/right_part1"
+        android:layout_marginLeft="4dp" >
+    	<TextView
+        	android:id="@+id/line11"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="line1"
+        	android:textColor="#8F8F8F"/>
+    	<TextView
+        	android:id="@+id/status22"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:text="line2"
+        	android:visibility="gone"
+        	android:layout_below="@id/line11"
+        	android:textColor="#8F8F8F"/>
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/right_part1"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="right">
+    	<RelativeLayout
+        	android:id="@+id/price_book1"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_marginRight="4dp">
+
+    		<ImageView 
+    	    	android:id="@+id/book1"
+    	    	android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:src="@drawable/bookbutton"
+        		android:layout_toRightOf="@+id/price1"
+        		android:layout_marginTop="20sp"/>
+    		<TextView
+        		android:id="@+id/price1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_alignBottom="@id/book1"
+        		android:layout_marginBottom="2dp"
+        		android:layout_marginRight="4dp"
+        		android:textColor="#EE7621"
+        		android:textSize="22sp"/>
+    	</RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
+

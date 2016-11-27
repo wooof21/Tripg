@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/fly_ticket"
+>
+    
+        <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#21669c">
+
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/order_res"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+
+        <LinearLayout
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/title_order"
+            android:orientation="vertical"
+            android:paddingBottom="20dp" >
+
+            <ImageView
+                android:id="@+id/sign"
+                android:layout_width="162dp"
+                android:layout_height="186dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="0.07"
+                android:paddingBottom="20dp"
+                android:paddingTop="60dp"
+                android:src="@drawable/px2" />
+
+            <TextView
+                android:id="@+id/commit_info"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:paddingTop="8dp"
+                android:text="您的订单已经提交成功"
+                android:textColor="#7d7d7d"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/pay_notification"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:text="请尽快支付"
+                android:textColor="#7d7d7d"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/order_info"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/status"
+            android:layout_centerHorizontal="true"
+            android:background="#ececec"
+            android:orientation="vertical" >
+
+	    <RelativeLayout
+	        android:id="@+id/pnr_info"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="40dp"
+        	android:paddingRight="40dp">
+	        <TextView 
+	            android:id="@+id/pnr_text"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="记录编号"
+        		android:textColor="#7d7d7d"
+        		android:textSize="20sp"
+        		android:paddingRight="20dp"/>
+	        <TextView 
+	            android:id="@+id/pnr_val"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/pnr_text"
+        		android:text="MTAXOT"
+        		android:textColor="#7d7d7d"
+        		android:textSize="20sp"/>
+	    </RelativeLayout>
+	    
+	    <RelativeLayout 
+	        android:id="@+id/orderno_info"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="40dp"
+        	android:paddingRight="40dp">
+	        <TextView 
+	            android:id="@+id/orderno_text"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="订单编号"
+        		android:textSize="20sp"
+        		android:textColor="#7d7d7d"
+        		android:paddingRight="20dp"/>
+	        <TextView 
+	            android:id="@+id/orderno_val"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/orderno_text"
+        		android:text="13596305913"
+        		android:textColor="#7d7d7d"
+        		android:textSize="20sp"/>
+	    </RelativeLayout>
+	    <RelativeLayout 
+	        android:id="@+id/price_info"
+	        android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:paddingLeft="40dp"
+        	android:paddingRight="40dp">
+	        <TextView 
+	            android:id="@+id/price_text"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:text="机票总价"
+        		android:textSize="20sp"
+        		android:textColor="#7d7d7d"
+        		android:paddingRight="20dp"/>
+	        <TextView 
+	            android:id="@+id/price_val"
+	            android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:layout_toRightOf="@id/price_text"
+        		android:text="KKKKK"
+        		android:textColor="#7d7d7d"
+        		android:textSize="20sp"/>
+	    </RelativeLayout>
+	</LinearLayout>
+		
+		<RelativeLayout
+		    android:id="@+id/rl12345"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/order_info"
+		    android:layout_alignRight="@+id/order_info"
+		    android:layout_below="@+id/order_info"
+		    android:layout_marginTop="15dp"
+		    android:background="@drawable/bg_corners"
+		    android:padding="5dp" >
+
+		    <TextView
+		        android:id="@+id/zhibubaobtn"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_centerHorizontal="true"
+		        android:text="银行卡支付"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp" />
+
+		</RelativeLayout>
+
+		<RelativeLayout
+		    android:id="@+id/rl123456"
+		    android:layout_width="fill_parent"
+		    android:layout_height="wrap_content"
+		    android:layout_alignLeft="@+id/rl12345"
+		    android:layout_alignRight="@+id/rl12345"
+		    android:layout_below="@+id/rl12345"
+		    android:layout_marginTop="16dp"
+		    android:background="@drawable/bg_corners_gray"
+		    android:padding="5dp" >
+
+		    <TextView
+		        android:id="@+id/flight_backtomain"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:text="返回首页"
+		        android:layout_centerHorizontal="true"
+		        android:textColor="#ffffff"
+		        android:textSize="20dp" />
+		</RelativeLayout>
+
+</RelativeLayout>

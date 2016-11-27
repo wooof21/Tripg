@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/cp_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="选择乘机人"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+
+        <TextView
+            android:id="@+id/cp_add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical|right"
+            android:layout_marginRight="10dp"
+            android:text="添加"
+            android:textColor="#ffffff"
+            android:textSize="20sp" />
+    </FrameLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/cp_bottom_ll"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:orientation="horizontal"
+            android:weightSum="1" 
+            android:background="@drawable/cp_psger_count">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4" />
+            <TextView 
+                android:id="@+id/cp_pcount_tv"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:text="X2"
+                android:textSize="18sp"
+                android:gravity="center"
+                android:layout_weight="0.6"
+                />
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/cp_finish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:src="@drawable/cp_finish" />
+    </LinearLayout>
+
+        <ListView
+        android:id="@+id/cp_lv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cp_bottom_ll"
+        android:layout_below="@id/title_order" >
+    </ListView>
+</RelativeLayout>

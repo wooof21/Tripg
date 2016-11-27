@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="我的订单"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           />
+    </FrameLayout>
+    <!-- air plane logo -->
+
+        <ImageView
+            android:id="@+id/imageViewvipordera1"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title_flight"
+            android:layout_marginTop="14dp"
+            android:gravity="center"
+            android:src="@drawable/flrig" />
+
+        <ImageView
+            android:id="@+id/imageViewvipordera3"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageViewvipordera1"
+            android:gravity="center"
+            android:src="@drawable/carorder" />
+
+        <ImageView
+            android:id="@+id/imageViewvipordera2"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageViewvipordera3"
+            android:gravity="center"
+            android:src="@drawable/hotelorder" />
+        <ImageView
+            android:id="@+id/imageViewvipordera4222"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/imageViewvipordera2"
+            android:gravity="center"
+            android:src="@drawable/train" />
+
+        <ImageView
+            android:id="@+id/order_travel"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/imageViewvipordera4222"
+            android:gravity="center"
+            android:src="@drawable/order_travel" />
+        <ImageView 
+            android:id="@+id/order_ship"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/order_travel"
+          	android:gravity="center"
+          	android:src="@drawable/order_ship"
+            />
+        <ImageView 
+            android:id="@+id/order_visa"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@id/order_ship"
+          	android:gravity="center"
+          	android:src="@drawable/order_visa"
+            />
+
+<!--         <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/imageViewvipordera4"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignTop="@+id/imageViewvipordera4"
+            android:text="" 
+            android:layout_marginTop="1dp"
+            android:background="#ffffff"/> -->
+
+                <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_gravity="bottom"
+            android:orientation="horizontal"
+            android:layout_alignParentBottom="true"
+            android:background="@drawable/main_bottom_bg"
+           
+            android:weightSum="4" >
+
+            <ImageView
+                android:id="@+id/vom_main"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/main_gray" />
+
+            <ImageView
+                android:id="@+id/vom_my_order"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/my_order_blue" />
+
+            <ImageView
+                android:id="@+id/vom_phone"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/phone_gray" />
+
+            <ImageView
+                android:id="@+id/vom_mine"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/mine_gray" />
+        </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+    
+     <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           />
+    </FrameLayout>
+    <!-- air plane logo -->
+    
+    
+	<FrameLayout 
+   	  android:layout_width="match_parent"
+  	  android:layout_height="match_parent" >
+
+    <ImageView
+        android:id="@+id/imageViewsucces1"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginTop="-100dp"
+        android:src="@drawable/ycg" />
+
+    <TextView
+        android:id="@+id/textViewsucces1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="#ff6600"
+        android:layout_marginLeft="-40dp"
+        android:layout_marginTop="40dp"
+        android:text="订单号:" />
+
+    <TextView
+        android:id="@+id/textViewsucces2"
+        android:layout_width="100dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="left"
+        android:textSize="20sp"
+        android:textColor="#ff6600"
+        android:layout_marginLeft="45dp"
+        android:layout_marginTop="40dp"
+        android:text="10000578" />
+
+    <ImageView
+        android:id="@+id/imageViewsucces2"
+        android:layout_width="100dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="150dp"
+        android:src="@drawable/backh" />
+
+	</FrameLayout>
+</LinearLayout>

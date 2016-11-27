@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <FrameLayout
+        android:id="@+id/title_order"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_qianzheng_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="签证"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:id="@+id/qianzheng_xiangview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/title_order"
+        android:background="#ffffff"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView1"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="产品名称：" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="意大利探亲访问签证"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="产品价格：" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_marginTop="5dp"
+                android:text="￥99999"
+                android:textSize="20dp" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:background="@drawable/qz2"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/textView5"
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="所需材料" />
+        </LinearLayout>
+        
+         <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/qz2"
+                android:orientation="vertical" >
+            <TextView
+                android:id="@+id/textView6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="5dp"
+                android:text="护照 1.有效期在6个月以上的因私护照（自回国之日开始算，为6个月以上） 2.请在护照最后一页签名，中文姓名 3.持换发护照者，需同时提供所有旧护照原件 身份证 1.如果是旧版身份证请用A4纸复印 2.如果是新版身份证请用A4纸复印正反两面 照片 1.二寸白底彩色近照2张 2.请在照片背面用铅笔写上自己的姓名 个人资料表 后附，请完整并准确填写 其他补充材料 提供往返机票订单 在职证明 1.使用公司正规抬头纸打印，内容全部为英文，并加盖公司红章 2.在职证明内容需包括：申请人姓名、出生日期、护照号、职位、收入、入职时间-任职时间不能早于营业执照上公司成立的时间、旅游具体起止时间并需注明担保申请人按期回国；单位名称、地址、传真、联系电话；以及负责人姓名和职务并请负责人签字" />
+            </ScrollView>
+        
+        
+    </LinearLayout>
+
+</RelativeLayout>

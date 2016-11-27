@@ -1,0 +1,166 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0">
+        
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/hotel_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <!-- air plane logo -->
+    <ImageView
+        android:id="@+id/ad"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:src="@drawable/hotel_title"
+        android:layout_below="@id/title_flight"
+        />
+    <LinearLayout
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/ad"
+        android:layout_marginTop="10dp"
+        android:background="#EAEAEA">
+        <LinearLayout
+            android:id="@+id/live_in_bg_holder"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:orientation="horizontal">
+            <Button
+        		android:id="@+id/live_in_bg_left"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/live_in_left"
+        		android:layout_marginTop="1dp"
+        		android:layout_marginLeft="1dp"
+        		android:text="长春"
+        		android:textSize="15sp"
+        		android:textColor="#5D88B2"/>
+            <FrameLayout
+        		android:id="@+id/live_in_bg_left1"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/live_in_left1"
+        		android:layout_marginTop="1dp"
+        		android:layout_marginLeft="1dp"
+        		android:visibility="gone">
+            	<SeekBar
+        			android:id="@+id/seek_bar"
+        			android:layout_width="200dp"
+        			android:layout_height="wrap_content"
+        			android:max="100"
+        			android:progressDrawable="@drawable/my_seekbar_drawable"
+        			android:thumb="@drawable/my_seek_thumb"
+        			android:layout_gravity="bottom|center_horizontal" />
+            	<TextView
+            	    android:id="@+id/changed_text"
+            	    android:layout_width="wrap_content"
+        			android:layout_height="wrap_content"
+        			android:layout_gravity="top|center_horizontal"
+        			android:layout_marginTop="2dp"
+        			android:layout_marginBottom="2dp"
+        			android:textSize="18sp"
+        			android:text="周边0公里"
+        			android:textColor="#5D88B2"/>
+            </FrameLayout>
+            <Button
+        		android:id="@+id/live_in_bg_right"
+        		android:layout_width="wrap_content"
+        		android:layout_height="wrap_content"
+        		android:background="@drawable/live_in_right"
+        		android:layout_marginTop="1dp"
+        		android:layout_marginRight="1dp"
+        		android:layout_marginLeft="1dp"
+        		android:textSize="18sp"
+        		android:textColor="#5D88B2"/>
+        </LinearLayout>
+        <Button
+        	android:id="@+id/live_time_bg"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/live_time"
+        	android:layout_marginTop="1dp"
+        	android:layout_marginLeft="1dp"
+        	android:layout_marginRight="1dp"
+        	android:text="2014-06-07"
+        	android:textSize="18sp"
+        	android:textColor="#5D88B2"/>
+        <Button
+        	android:id="@+id/leave_time_bg"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/leave_time"
+        	android:layout_marginTop="1dp"
+        	android:layout_marginLeft="1dp"
+        	android:layout_marginRight="1dp"
+        	android:text="2014-06-09"
+        	android:textSize="18sp"
+        	android:textColor="#5D88B2"/>
+        <Button
+        	android:id="@+id/key_words"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/keywords"
+        	android:layout_marginTop="1dp"
+        	android:layout_marginLeft="1dp"
+        	android:layout_marginRight="1dp"
+        	android:text="位置/品牌/酒店名"
+        	android:textSize="18sp"
+        	android:textColor="#5D88B2"/>
+        <Button
+        	android:id="@+id/price_star_bg"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:background="@drawable/price_star"
+        	android:layout_marginTop="1dp"
+        	android:layout_marginLeft="1dp"
+        	android:layout_marginRight="1dp"
+        	android:layout_marginBottom="1dp"
+        	android:text="不限"
+        	android:textSize="18sp"
+        	android:textColor="#5D88B2"/>
+    </LinearLayout>
+    <Button
+        	android:id="@+id/commit"
+        	android:layout_width="wrap_content"
+        	android:layout_height="wrap_content"
+        	android:layout_below="@id/items"
+        	android:background="@drawable/query"
+        	android:layout_marginTop="12dp"
+        	android:layout_centerHorizontal="true"/>
+</RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+
+

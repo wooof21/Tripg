@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:paddingTop="5dp" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewhitem1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="下单日期:"
+            android:textColor="#f2763a"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#ababab"
+            android:text="07/09/2014 10:10:10"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="5dp"
+            android:text="取消订单"
+            android:textColor="#f2763a"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewhitem2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="长春海航名门酒店（原长春名门酒店）"
+            android:textColor="#f2763a"
+            android:textSize="15sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewhitem5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="订单编号:"
+            android:textColor="#eba62f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:textColor="#ababab"
+            android:text="10000678"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem7"
+            android:layout_width="10dp"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="75dp"
+            android:paddingTop="5dp"
+            android:text="￥"
+            android:textColor="#ff6600"
+            android:textSize="10sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="0dp"
+            android:paddingTop="5dp"
+            android:text="1000"
+            android:textColor="#ff6600"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textViewhitem9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="使用日期:"
+            android:textColor="#eba62f"
+            android:textSize="15sp" />
+
+        <TextView
+            android:id="@+id/textViewhitem10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text="2014-10-10"
+            android:textColor="#ababab"
+            android:textSize="15sp" />
+    </LinearLayout>
+    
+</LinearLayout>

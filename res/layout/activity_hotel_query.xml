@@ -1,0 +1,132 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_hotel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0">
+       
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/hotel_book"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"/>
+    </FrameLayout>
+    <LinearLayout 
+        android:id="@+id/hotel_ll"
+        android:layout_width="fill_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:weightSum="3"
+        >
+            <ImageView
+        android:id="@+id/hotel_shaixuan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+
+        android:src="@drawable/shaixuan2" />
+
+        <ImageView
+        android:id="@+id/hotel_jiage"
+        android:layout_height="wrap_content"
+        android:layout_width="wrap_content"
+
+        android:layout_weight="1"
+        android:src="@drawable/jiage2"/>
+
+    <ImageView
+        android:id="@+id/hotel_xingji"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/xingji2"
+
+		android:layout_weight="1"/>
+        
+        
+        
+    </LinearLayout>
+
+    <cn.tripg.xlistview.XListView
+        android:id="@+id/xListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_hotel" 
+        android:layout_above="@id/hotel_ll"
+        android:visibility="invisible">
+
+    </cn.tripg.xlistview.XListView>
+        <cn.tripg.xlistview.XFilterListView
+        android:id="@+id/xFilterListView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@id/title_hotel" 
+        android:layout_above="@id/hotel_ll"
+        android:visibility="invisible">
+
+    </cn.tripg.xlistview.XFilterListView>
+
+    <ListView
+        android:id="@+id/hotel_filter_listview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/hotel_ll"
+        android:layout_below="@id/title_hotel"
+        android:background="#CCCCCC"
+        android:visibility="invisible" >
+       
+    </ListView>
+<LinearLayout 
+    android:id="@+id/hotel_area_layout"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:layout_above="@id/hotel_ll"   
+    android:background="#CCCCCC"
+    android:orientation="vertical"
+    android:visibility="invisible"
+    >
+    <ImageView 
+        android:id="@+id/hotel_area_filter_cancle"
+        android:layout_width="20dp"
+    	android:layout_height="20dp"
+    	android:layout_gravity="right"
+    	
+    	android:background="@drawable/hotel_filter_cancle"/>
+    <Button 
+        android:id="@+id/hotel_area_commercial_textview"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:text="商业区"
+    	android:textSize="25dp"
+    />
+    <Button 
+        android:id="@+id/hotel_area_district_textview"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:gravity="center"
+    	android:text="行政区"
+    	android:textSize="25dp"
+        />
+
+</LinearLayout>
+
+
+
+</RelativeLayout>

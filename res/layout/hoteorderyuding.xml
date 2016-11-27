@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fly_ticket"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+     <!-- title -->
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0"
+        >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:layout_gravity="left"/>
+        <TextView
+            android:id="@+id/title_text"
+            android:textColor="#ffffff"
+            android:textSize="26sp"
+            android:text="@string/hotel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+           />
+    </FrameLayout>
+    <!-- air plane logo -->
+    
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    	    <TextView
+	        android:id="@+id/textViewhotelorder1"
+	        android:layout_width="70dp"
+	        android:layout_height="22dp"
+	        android:textSize="18sp"
+	        android:layout_marginLeft="10dp"
+	        android:layout_gravity="center"
+	        android:text="入住人:" />
+	    
+        <EditText
+        	android:id="@+id/editTexthotelPername"
+        	android:layout_width="match_parent"
+        	android:layout_height="44dp"
+        	android:layout_gravity="center"
+        	android:gravity="center_vertical"
+        	android:imeOptions="actionDone" 
+        	android:layout_marginLeft="10dp"
+        	android:background="@null"
+        	android:hint="请输入姓名"
+         />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    <TextView
+	        android:id="@+id/textViewhotelorder2"
+	        android:layout_width="70dp"
+	        android:layout_height="22dp"
+	        android:textSize="18sp"
+       	    android:layout_marginLeft="10dp"
+	        android:layout_gravity="center"
+	        android:text="手机号:" />
+	    <EditText
+        	android:id="@+id/editTexthotelphoneNum"
+        	android:layout_width="match_parent"
+        	android:layout_height="44dp"
+        	android:layout_marginLeft="10dp"
+        	android:layout_gravity="center"
+        	android:background="@null"
+        	android:gravity="center_vertical"
+        	android:imeOptions="actionDone" 
+        	android:phoneNumber="true"
+    		android:maxLength="11"
+    		android:numeric="integer"
+        	android:hint="请输入电话号"
+         />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    >
+	    	    <TextView
+	        android:id="@+id/textViewhoteltime"
+	        android:layout_width="90dp"
+	        android:layout_height="22dp"
+       		android:layout_marginLeft="4dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+	        android:text="预留时间:" />
+	    
+	    
+	    <TextView
+	        android:id="@+id/textViewhoteltime1"
+	        android:layout_width="match_parent"
+	        android:layout_height="30dp"
+       		android:layout_marginLeft="10dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+        	android:textColor="#ff6600"
+	        android:text="请选择时间" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    >
+	    
+	    	     <TextView
+	        android:id="@+id/textView1"
+	        android:layout_width="76dp"
+	        android:layout_height="22dp"
+       		android:layout_marginLeft="2dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+	        android:text="房间数:" />
+	    
+	       <ImageView
+	        android:id="@+id/imageViewhotelmic"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+       		android:layout_gravity="center"
+       		android:layout_marginLeft="20dp"
+        	android:gravity="center"
+	        android:src="@drawable/mic" />
+	     
+	     <TextView
+	        android:id="@+id/textViewfanghotel1"
+	        android:layout_width="75dp"
+	        android:layout_height="22dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+        	android:layout_marginLeft="5dp"
+	        android:text="1" />
+	       
+	      <ImageView
+	        android:id="@+id/imageViewaddhetle1"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+        	android:layout_marginLeft="5dp"
+	        android:src="@drawable/add" />  
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    >
+	    	    <TextView
+	        android:id="@+id/textView123456098"
+	        android:layout_width="90dp"
+	        android:layout_height="22dp"
+       		android:layout_marginLeft="4dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+	        android:text="入住天数:" />
+	    
+	    <ImageView
+	        android:id="@+id/imageViewhotelnummic"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+       		android:layout_marginLeft="20dp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+        	android:visibility="gone"
+	        android:src="@drawable/mic" />
+	     
+	     <TextView
+	        android:id="@+id/textViewfanghotelnum1"
+	        android:layout_width="75dp"
+	        android:layout_height="22dp"
+       		android:layout_marginLeft="35dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+	        android:text="1" />
+	       
+	      <ImageView
+	        android:id="@+id/imageViewnumaddhetle1"
+	        android:layout_width="25dp"
+	        android:layout_height="25dp"
+       		android:layout_marginLeft="5dp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+        	android:visibility="gone"
+	        android:src="@drawable/add" />
+	    
+	</LinearLayout>
+	
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="wrap_content"
+	    android:orientation="horizontal"
+	    android:layout_marginTop="10dp"
+	    >
+	    	    <TextView
+	        android:id="@+id/textView2"
+	        android:layout_width="80dp"
+	        android:layout_height="22dp"
+       		android:layout_marginLeft="10dp"
+       		android:textSize="18sp"
+       		android:layout_gravity="center"
+        	android:gravity="center"
+	        android:text="预订总价:" /> 
+	    
+	    <TextView
+	        android:id="@+id/textViewhotelpic"
+	        android:layout_width="100dp"
+	        android:layout_height="22dp"
+       		android:textSize="18sp"
+       		android:layout_marginLeft="70dp"
+       		android:layout_gravity="center"
+        	android:gravity="left"
+        	android:textColor="#ff6600"
+	        android:text="1000" />
+	</LinearLayout>
+	
+		    <ImageView
+	        android:id="@+id/imageViewhotelyuding"
+	        android:layout_width="120dp"
+	        android:layout_height="60dp"
+	        android:layout_marginTop="40dp"
+	        android:layout_gravity="center"
+        	android:gravity="center"
+	        android:src="@drawable/tjyd" />
+</LinearLayout>

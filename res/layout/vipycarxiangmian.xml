@@ -1,0 +1,225 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/order_bg_car" >
+
+    <!-- title -->
+
+    <FrameLayout
+        android:id="@+id/title_flight"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#3aace0" >
+
+        <ImageView
+            android:id="@+id/title_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/back" />
+
+        <TextView
+            android:id="@+id/title_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="订单详情"
+            android:textColor="#ffffff"
+            android:textSize="26sp" />
+    </FrameLayout>
+    <!-- air plane logo -->
+
+
+    <!--
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp"
+        android:orientation="horizontal"
+        android:background="#FFFF00" >
+
+        <TextView
+            android:id="@+id/textViewycarx5"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewycarx6"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:layout_marginLeft="10dp"
+            android:paddingTop="5dp"
+            android:text=""
+            android:textSize="20sp" />
+    </LinearLayout>
+    -->
+
+    
+
+    
+
+    
+
+    
+
+    
+
+
+        <TextView
+            android:id="@+id/textViewycarx2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@+id/textViewycarx1"
+            android:layout_marginLeft="18dp"
+            android:layout_toRightOf="@+id/textViewycarx1"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_below="@+id/title_flight"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="16dp"
+            android:text="订单状态:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/textViewycarx1"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/textViewycarx2"
+            android:text="出发地点:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx3"
+            android:textSize="16dp" />
+        
+
+
+        <TextView
+            android:id="@+id/textViewycarx7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:layout_below="@+id/textViewycarx3"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/textViewycarx2"
+            android:text="用车时间:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx7"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx7"
+            android:layout_below="@+id/textViewycarx7"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/textViewycarx2"
+            android:text="总        价:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx9"
+            android:textSize="16dp" />
+        
+        <TextView
+            android:id="@+id/textViewycarx11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx9"
+            android:layout_below="@+id/textViewycarx9"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/textViewycarx2"
+            android:text="类        型:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx11"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx11"
+            android:layout_below="@+id/textViewycarx11"
+            android:layout_marginTop="24dp"
+            android:layout_toLeftOf="@+id/textViewycarx2"
+            android:text="乘  车  人:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx13"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx11"
+            android:layout_alignRight="@+id/textViewycarx13"
+            android:layout_below="@+id/textViewycarx13"
+            android:layout_marginTop="24dp"
+            android:text="联系电话:"
+            android:textSize="16dp" />
+
+        <TextView
+            android:id="@+id/textViewycarx16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/textViewycarx2"
+            android:layout_alignTop="@+id/textViewycarx15"
+            android:textSize="16dp" />
+        
+        
+
+
+         <TextView
+             android:id="@+id/vipcarzhibubaobtn"
+             android:layout_width="match_parent"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/textViewycarx15"
+             android:layout_below="@+id/textViewycarx16"
+             android:layout_marginTop="30dp"
+             android:layout_marginRight="15dp"
+             android:text="现在支付"
+             android:textColor="#ffffff"
+             android:background="@drawable/corners_bg_sblue"
+             android:gravity="center"
+             android:visibility="gone"
+             android:textAppearance="?android:attr/textAppearanceLarge" />
+    
+</RelativeLayout>

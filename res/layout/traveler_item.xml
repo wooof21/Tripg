@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/carorder_bg"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/ti_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:layout_marginTop="10dp"
+        android:text="张无忌"
+        android:textColor="#4a4a4a"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/ti_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="身份证:220106100010100000"
+        android:textColor="#9c9d9e" />
+
+    <TextView
+        android:id="@+id/ti_birthday"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="6dp"
+        android:text="生日:1000-10-10"
+        android:textColor="#9c9d9e"
+        android:visibility="gone" />
+
+    <TextView
+        android:id="@+id/ti_sex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="6dp"
+        android:text="性别:男"
+        android:textColor="#9c9d9e" 
+        android:visibility="gone"/>
+
+</LinearLayout>

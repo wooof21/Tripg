@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <item name="progressbar" type="id"/>
+    <item name="textone" type="id"/>
+    <item name="texttwo" type="id"/>
+    <item name="textthree" type="id"/>
+    <item name="textfour" type="id"/>
+    <item name="textfive" type="id"/>
+    <item name="textsix" type="id"/>
+    <item name="textseven" type="id"/>
+    <item name="texteight" type="id"/>
+    <item name="textnine" type="id"/>
+    <item name="textten" type="id"/>
+    <item name="text11" type="id"/>
+    <item name="text12" type="id"/>
+    <item name="text13" type="id"/>
+    <item name="text14" type="id"/>
+    <item name="text15" type="id"/>
+    <item name="text16" type="id"/>
+    <item name="text17" type="id"/>
+    <item name="text18" type="id"/>
+    <item name="text19" type="id"/>
+    <item name="text20" type="id"/>
+    <item name="text21" type="id"/>
+    <item name="text22" type="id"/>
+    <item name="text23" type="id"/>
+    <item name="text24" type="id"/>
+    <item name="text25" type="id"/>
+    <item name="text26" type="id"/>
+    <item name="text27" type="id"/>
+    <item name="text28" type="id"/>
+    <item name="textrili" type="id"/>
+    <item name="buttonone" type="id"/>
+    <item name="buttontwo" type="id"/>
+    <item name="buttonthree" type="id"/>
+    <item name="buttonfour" type="id"/>
+    <item name="buttonfive" type="id"/>
+    <item name="buttonsix" type="id"/>
+    <item name="buttonseven" type="id"/>
+    <item name="imageone" type="id"/>
+    <item name="imagetwo" type="id"/>
+    <item name="imagethree" type="id"/>
+    <item name="imagefour" type="id"/>
+    <item name="imagefive" type="id"/>
+    <item name="lineone" type="id"/>
+    <item name="linetwo" type="id"/>
+    <item name="linethree" type="id"/>
+    <item name="linefour" type="id"/>
+    <item name="linefive" type="id"/>
+    <item name="linesix" type="id"/>
+    <item name="lineseven" type="id"/>
+    <item name="lineeight" type="id"/>
+    <item name="linenine" type="id"/>
+    <item name="linerili" type="id"/>
+    <item name="linetitle" type="id"/>
+    <item name="lineten" type="id"/>
+    <item name="editone" type="id"/>
+    <item name="edittwo" type="id"/>
+    <item name="editfour" type="id"/>
+    <item name="publiclist" type="id"/>
+    <item name="relative" type="id"/>
+    <item name="relativeone" type="id"/>
+    <item name="relativetwo" type="id"/>
+    <item name="relativethree" type="id"/>
+    <item name="relativefour" type="id"/>
+    <item name="relativefive" type="id"/>
+    <item name="relativesix" type="id"/>
+    <item name="viewflipper" type="id"/>
+    <item name="slidingdrawer" type="id"/>
+    <item name="checkbox" type="id"/>
+    <item name="vPager" type="id"/>
+    <item name="radio_group" type="id"/>
+    <item name="radioone" type="id"/>
+    <item name="radiotwo" type="id"/>
+    <item name="spinner" type="id"/>
+    <item name="spinnerone" type="id"/>
+    <item name="editthree" type="id"/>
+    <item name="scroll" type="id"/>
+    <item name="text29" type="id" />
+    <item name="text30" type="id" />
+    <item name="zbhotel_rzcsm" type="id" />
+    <item name="radiothree" type="id" />
+    <item name="radiofour" type="id" />
+    <item name="radiofive" type="id" />
+    <item name="qipaohotel" type="id" />
+    <item name="radio_groupone" type="id" />
+    <item name="mainlay" type="id" />
+    <item name="editfive" type="id" />
+    <item name="editsix" type="id" />
+
+</resources>
